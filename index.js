@@ -15,10 +15,10 @@ client.on("ready", () => {
 
 //FUD Deterrent - "Good time to buy?"
 client.on("message", (message) => {
-  if (message.content.toLowercase.includes("good time")) {
+  if (message.content.includes("good time" || "Good time")) {
     message.channel.send("Always.");
   }
-});
+}); 
 
 async function getTezosPrice() {
   // Get crypto price from coingecko API
