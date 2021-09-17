@@ -39,7 +39,7 @@ async function getTezosPrice() {
 
 setInterval(function () {
   getTezosPrice();
-}, 3000);
+}, 30000);
 
 //Passing discord.js our authentication token from .env file
 client.login(token);
