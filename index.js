@@ -1,12 +1,11 @@
 const Discord = require("discord.js");
 const { Client, Intents } = require("discord.js");
 const axios = require("axios");
+require('dotenv').config()
 
 //Global price var
 let tezosprice = 0;
-
 let token = process.env.TOKEN;
-console.log('this is token', token)
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -43,4 +42,4 @@ setInterval(function () {
 }, 3000);
 
 //Passing discord.js our authentication token from .env file
-client.login(process.env.TOKEN);
+client.login(token);
