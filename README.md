@@ -16,6 +16,7 @@ Tezos Price Discord Bot allows you to easily track the Tezos price chat in your 
  - 24hr Tezos percentage change % (Δ)	
 ![enter image description here](https://i.imgur.com/qrhvZVE.gif)
 
+
  **FUD Detection :)**
 - Answers "Always" to any questions regarding whether it is an appropriate time to buy Tezos
 ![enter image description here](https://i.imgur.com/EbPruy7.gif)
