@@ -16,7 +16,7 @@ client.on("ready", () => {
 
 //FUD Deterrent - "Good time to buy?"
 client.on("message", (message) => {
-  if (message.content.includes("good time" || "Good time")) {
+  if (message.content.toLocaleLowerCase.includes("good time") && message.content.toLocaleLowerCase.includes("tezos")) {
     message.channel.send("Always.");
   }
 }); 
