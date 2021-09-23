@@ -38,7 +38,7 @@ async function getTezosPrice() {
     const guild = await client.guilds.fetch(GUILD_ID);
     //Set bot nickname to updated price every 3000ms 
     await guild.me.setNickname(`$ ${tezosprice}`);
-    client.user.setStatus(`Watching ${twentyfourhourchangeRounded}%`) 
+    await client.user.setActivity(`${twentyfourhourchangeRounded}%`, {type: 'WATCHING'})
   } catch (err) {
     console.log("error");
   }
@@ -46,7 +46,7 @@ async function getTezosPrice() {
 
 setInterval(function () {
   getTezosPrice();
-}, 30000);
+}, 3000);
 
 //Passing discord.js our authentication token from .env file
 client.login(token);
