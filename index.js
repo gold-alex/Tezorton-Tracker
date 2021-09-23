@@ -35,7 +35,7 @@ async function getTezosPrice ()  {
     console.log("heres da change", twentyfourhourchangeRounded);
 
     console.log(tezosprice);
-    const GUILD_ID = "770748597708521493";
+    const GUILD_ID = "*******INSERT YOUR GUILD/CHANNEL ID IN HERE IN QUOTES**********";
     const guild = await client.guilds.fetch(GUILD_ID);
     //Set bot nickname to updated price every 3000ms 
     await guild.me.setNickname(`$ ${tezosprice}`);
