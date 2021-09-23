@@ -1,6 +1,6 @@
 # Tezos Price Discord Bot
 
-Tezos Price Discord Bot allows you to easily track the Tezos price chat in your Discord channel: 
+Tezos Price Discord Bot allows you to easily track the Tezos price chat in your Discord channel. 
 
 # Technologies Utilized
  - Node.js
