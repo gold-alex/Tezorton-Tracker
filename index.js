@@ -47,7 +47,7 @@ async function getTezosPrice ()  {
 
 setInterval(function () {
   getTezosPrice();
-}, 3000);
+}, 30000);
 
 
 
