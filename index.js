@@ -21,7 +21,8 @@ client.on("message", (message) => {
       message.channel.send("Always.");
   }
 }
- 
+}
+
 
 async function getTezosPrice() {
   // Get crypto price from coingecko API
