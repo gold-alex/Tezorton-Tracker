@@ -16,15 +16,13 @@ client.on("ready", () => {
 
 //FUD Deterrent - "Good time to buy?"
 client.on("message", (message) => {
-  if (message.content.includes("good time") || message.content.includes("Good time") ){
-    if (message.content.includes("tezos") || message.content.includes("Tezos") ){
+  if (message.content.includes("good time") || message.content.includes("Good time") && message.content.includes("tezos")){
+    if (message.content.includes("tezos") || message.content.includes("Tezos")) {
       message.channel.send("Always.");
-  }
-}
-}
+    }
+  }})
 
-
-async function getTezosPrice() {
+async function getTezosPrice ()  {
   // Get crypto price from coingecko API
   try {
     const data = await axios.get(
@@ -51,5 +49,7 @@ setInterval(function () {
   getTezosPrice();
 }, 3000);
 
+
+
 //Passing discord.js our authentication token from .env file
-client.login(token);
+client.login(token)
